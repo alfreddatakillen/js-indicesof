@@ -1,0 +1,31 @@
+{
+  "author": {
+    "name": "Alfred Godoy",
+    "email": "alfred@nurd.nu",
+    "url": "https://github.com/alfreddatakillen/"
+  },
+  "bugs": {
+    "url": "https://github.com/alfreddatakillen/js-indicesof/issues"
+  },
+  "description": "Just like indexOf(), but returns an array of all occurrences. Works on both strings and buffers.",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "homepage": "https://github.com/alfreddatakillen/js-indicesof",
+  "keywords": [
+    "indexOf",
+    "indicesOf"
+  ],
+  "license": "GPLv3+",
+  "main": "index.js",
+  "name": "indicesof",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfreddatakillen/js-indicesof.git"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha test/**/*.js"
+  },
+  "version": "1.0.0"
+}
