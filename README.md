@@ -13,7 +13,8 @@ Install
 Syntax
 ------
 
-	function (needle, haystack, startOffset, endOffset ]);
+	const indicesOf = require('indicesof');
+	indicesOf(needle, haystack, startOffset, endOffset ]);
 
 * `haystack` can be a string or a buffer.
 * `startOffset` is optional. Default is 0.
@@ -28,7 +29,7 @@ Note that the byte position is returned for Buffers, which
 might not be the same as the char position for strings:
 
 	indicesOf('l', 'Älg'); // Returns [ 1 ]
-	indicesOf('l', Buffer.from('Älg', 'utf8')); // Returns [ 2 ]
+	indicesOf('l', Buffer.from('Älg')); // Returns [ 2 ]
 
 Example
 -------
